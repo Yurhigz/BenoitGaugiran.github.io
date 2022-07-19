@@ -147,3 +147,50 @@ div.barre-verticale{
     background-color: var(--color1);
     margin-right: 10px;
 }
+
+.col-portfolio {
+    width: 47%;
+}
+.test-1{
+    float: right;
+}
+
+div.frame{
+    margin: 30px 50px;
+    padding: 20px 30px;
+    box-shadow: 0px 0px 8px 8px rgba(0,0,0,0.1);
+    background-color: white;
+}
+
+div.frame p.frame-title {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+div.frame table {
+    width: 100%;
+}
+
+img.frame {
+    height: 100px;
+    left: 50%;
+    margin-right: 40px;
+}
+
+/*PORTFOLIO*/
+
+div.portfolio-header{
+    background: url(header.jpg) no-repeat center/cover;
+    height: 90px; 
+    position: relative; 
+}
+
+.portfolio-header-title {
+    font-size: 26px;
+    font-weight: bold;
+    color: white;
+    padding-top: 4px;
+    padding-left: 8px;
+}
