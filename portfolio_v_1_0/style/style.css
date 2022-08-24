@@ -1,0 +1,193 @@
+:root {
+    --color1:#D89584;
+    --color2:#F4F4F4;
+}
+body {
+    font-family: 'Inter', sans-serif;
+    src: url('https://rsms.me/inter/inter.css');
+    margin: 0;
+}
+div.header {
+    background: url(../image/cover_overlay.png) no-repeat center / 100% 100% , url(../image/cover.jpg) no-repeat center / cover ;
+    height: 360px;  
+}
+
+.topnav ul{
+    list-style: none;
+    background: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.topnav li{
+    display: inline-block;
+}
+
+.topnav a{
+    text-decoration: none;
+    color: var(--color1);
+    width: 100px;
+    display: block;
+    padding: 25px 20px;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+.topnav a:hover{
+    color: #fff;
+}
+
+.titre h1{
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-top: 25px;
+}
+.bar{
+    border: 1.5px solid var(--color1);
+    margin-left: 40%;
+    margin-right: 40%;
+    margin-top: 35px;
+}
+
+.metier p{
+    margin-top: 45px;
+    color: #fff;
+    text-align: center;
+}
+
+.about-me {
+    height: 410px;
+    background-color: #F8F9FA;
+    margin-top: 0px;
+    padding-left: 10px;
+
+}
+.about-me h1{
+    margin-top: 0;
+    padding-top: 10px;
+    
+    display: inline-block;
+    background-image: linear-gradient(to right, #000000, #000000);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 100% 2px;
+
+
+}
+
+.skills {
+    height: 410px;
+    padding-left: 10px;
+}
+
+.skills h1{
+  display: inline-block;
+  background-image: linear-gradient(to right, #000000, #000000);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+}
+
+.portfolio{
+    height: 550px;
+    background-color: #F8F9FA;
+    padding-left: 10px;
+
+}
+
+.portfolio h1{
+  display: inline-block;
+  background-image: linear-gradient(to right, #000000, #000000);
+  background-position: bottom left;
+  background-repeat: no-repeat;
+  background-size: 100% 2px;
+}
+
+/* ----- Contact section ------ */
+.contact{
+    padding-left: 10px;
+    text-align: center;
+    margin-top: 25px;
+}
+.contact a{
+  color: #D89584;
+  text-decoration: none;
+}
+.contact a:hover{
+  color: #251667;
+  text-decoration: underline;
+}
+.contact p{
+  margin-top: 10px;
+}
+
+.button-contact{
+  margin-top: 45px;
+}
+
+button.btn-primary {
+  background-color: #ffffff;
+  border-color: #D89584;
+  color: #D89584;
+  border-width: 2px;
+}
+
+button.btn-primary:hover {
+  background-color: #D89584;
+  border-color: #D89584;
+  color: #ffffff;
+
+}
+
+
+
+/* -----  Footer  ------- */ 
+.footer{
+  text-align:center;
+}
+.container {
+  margin-top: 100px;
+  max-width: 1140px;
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.row{
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 350px
+}
+
+div.col-md-4{
+  -webkit-box-flex: 0;
+  flex: 0 0 33.3333%;
+  max-width: 33.33333%;
+}
+span.copyright{
+  font-size: 90%;
+  line-height: 60px;
+  text-transform: none;
+}
+
+ul.social-button{
+  margin-bottom: 0;
+}
+.list-inline{
+  padding-left: 0;
+  list-style: none;
+}
+.list-inline-item{
+  margin-right: .5rem;
+  display: inline-block;
+}
+
+
+
