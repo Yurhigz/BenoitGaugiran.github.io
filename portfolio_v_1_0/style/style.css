@@ -2,6 +2,11 @@
     --color1:#D89584;
     --color2:#F4F4F4;
 }
+
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 body {
     font-family: 'Inter', sans-serif;
     src: url('https://rsms.me/inter/inter.css');
@@ -60,10 +65,10 @@ div.header {
 }
 
 .about-me {
-    height: 410px;
+    height: 450px;
     background-color: #F8F9FA;
-    margin-top: 0px;
-    padding-left: 10px;
+    text-align: center;
+    padding-top: 25px;
 
 }
 .about-me h1{
@@ -79,9 +84,12 @@ div.header {
 
 }
 
+/* Skills section */ 
+
 .skills {
     height: 410px;
-    padding-left: 10px;
+    text-align: center;
+    margin-top: 25px;
 }
 
 .skills h1{
@@ -109,7 +117,6 @@ div.header {
 
 /* ----- Contact section ------ */
 .contact{
-    padding-left: 10px;
     text-align: center;
     margin-top: 25px;
 }
@@ -189,5 +196,199 @@ ul.social-button{
   display: inline-block;
 }
 
+/* gallery section */
+.gallery {
+  background: var(--bg-lightgrey);
+}
 
+.gallery a.zoom {
+  overflow: hidden;
+  position: relative;
+}
 
+.gallery a.zoom img {
+  transition: 0.3s ease-in-out;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.gallery a:hover img {
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.gallery span.hover-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  padding: 46px 50px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.gallery span.hover-content .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.gallery span.hover-content .content {
+  font-size: 18px;
+  color: #eee;
+  display: block;
+}
+
+.gallery .overlay__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(51 51 51 / 56%);
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.gallery a.zoom:hover .hover-content {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.gallery a.zoom:hover .overlay__hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .gallery span.hover-content {
+    padding: 36px 40px;
+  }
+}
+
+.pb-5 {
+  padding-bottom: 3rem !important;
+}
+
+/* container */
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1200px;
+  }
+}
+
+.py-md-5 {
+  padding-top: 3rem !important;
+  padding-bottom: 3rem !important;
+}
+
+.py-4 {
+  padding-top: 1.5rem !important;
+  padding-bottom: 1.5rem !important;
+}
+.text-center {
+  text-align: center !important;
+}
+.mb-sm-0 {
+  margin-bottom: 0 !important;
+}
+
+.mb-sm-5 {
+  margin-bottom: 3rem !important;
+}
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+h5.title-small {
+  color: var(--primary-color);
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.mb-1 {
+  margin-bottom: 0.25rem !important;
+}
+h3.title-style {
+  font-size: 34px;
+  line-height: 44px;
+  font-weight: bold;
+}
+
+.row {
+  --bs-gutter-x: 1.5rem;
+  --bs-gutter-y: 0;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: calc(var(--bs-gutter-y) * -1);
+  margin-right: calc(var(--bs-gutter-x) / -2);
+  margin-left: calc(var(--bs-gutter-x) / -2);
+}
+
+.row>* {
+  flex-shrink: 0;
+  width: 100%;
+  max-width: 100%;
+  padding-right: calc(var(--bs-gutter-x) / 2);
+  padding-left: calc(var(--bs-gutter-x) / 2);
+  margin-top: var(--bs-gutter-y);
+}
+.col-lg-4 {
+  flex: 0 0 auto;
+  width: 33.3333333333%;
+}
+.col-md-6 {
+  flex: 0 0 auto;
+  width: 50%;
+}
+
+.d-block {
+  display: block !important;
+}
+.card-img-bottom {
+  width: 100%;
+}
+.mt-md-0 {
+  margin-top: 0 !important;
+}
+.mt-4 {
+  margin-top: 1.5rem !important;
+}
+.pt-lg-2 {
+  padding-top: 0.5rem !important;
+}
+
+/* test */ 
