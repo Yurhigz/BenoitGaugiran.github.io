@@ -7,24 +7,24 @@
         <link rel="stylesheet" href="style/style.css" type="text/css">
         <link rel="icon" href="image/data_brown.png">
         <link rel="stylesheet" href="style/bootstrap.min.css">
-        <link rel="stylesheet" href="style/style-starter.css">
 
     </head>
 
     <body>  
+
  
         <!-- Header -->  
         <div class='header'> 
-         <!-- Menu Bar -->    
-            <div class="topnav">
-                <ul> 
-                    <li><a class="active" href="#home">Home</a></li>
-                    <li><a href="#skills">Skills</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">Portfolio</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </div> 
+         <!-- Menu Bar -->   
+            <div id="background-topnav">
+                <div id="topnav" >
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#skills">Skills</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#contact">Contact</a>
+                </div> 
+            </div>
             <div class="titre"><h1>Benoît Gaugiran</h1></div>
             <div class="bar"></div>
             <div class = 'metier'><p>Data Analyst | Data Scientist</p></div>
@@ -40,7 +40,7 @@
                     <p>Hello, my name is Benoît. 
                         I am freshly reconverted as a Data Scientist. 
                         As an originally scientific profile I came back to what I enjoy the most, mathematics and analysis.  
-                        I am very curious, and that drives me to work over plenty of different subject, I like to dig deep down into datas and share what I learn !
+                        I am very curious, and that drives me to work over plenty of different subjects, I like to dig deep down into datas and share what I learn through clear visualization !
                     </p>
                     <img src = "./image/test.svg" alt="My SVG" style="margin-top: 50px;">
 
@@ -60,19 +60,19 @@
                         <div class="skill-bloc-left mbot" style="width: 50%;">
                             <img src="./image/data_gathering.png" width="48" height="48">
                             <h2>Data Gathering</h2>
-                            <p>Data harvesting , development of webscraping scripts. Creation of automated workflows.</p>
+                            <p>Data harvesting , development of webscraping scripts.<br> Creation of automated workflows.</p>
                         </div>
                         <div class="skill-bloc-right mbot" style="width: 50%;">
                             <img src="./image/data_cleaning.png" width="48" height="48">
                             <h2>Data Cleaning</h2>
-                            <p>Remove incorrect, corrupted, incorrectly formatted and duplicate data. Deliver proper dataset to explore.</p>
+                            <p>Remove incorrect, corrupted, incorrectly formatted and duplicate data.<br> Deliver proper dataset to explore.</p>
                         </div>
                     </div>
                     <div class="container-skill mbot">
                         <div class="skill-bloc-left" style="width: 50%;">
                             <img src="./image/search-analysis.png" width="48" height="48">
                             <h2>Data Mining </h2>
-                            <p>Data exploration and transformation, application of statistical methods. Analyzing results,trends. Get more value from data with prediction models.</p>
+                            <p>Data exploration and transformation, application of statistical methods.<br> Analyzing results,trends. Get more value from data with prediction models.</p>
                         </div>
                         <div class="skill-bloc-right mbot" style="width: 50%;">
                             <img src="./image/data-visualization.png" width="48" height="48">
@@ -185,7 +185,7 @@
                         <span class='copyright'>Copyright Gaugiran Benoit 2022 </span>
                     </div>          
                     <div class="col-md-4">
-                        <ul class="list-inline social-button" style="margin-top: 10px;">
+                        <ul class="list-inline social-button" style="margin-top: 10px; text-align: center;">
                             <li class="list-inline-item"><a href='https://github.com/Yurhigz'><img src='./image/github-logo.png'width="36" height="36"></a></li>
                             <li class="list-inline-item"><a href='https://www.linkedin.com/in/benoit-gaugiran/'><img src="./image/linkedin.png" width="36" height="36"></a></li>
                             <li class="list-inline-item"><a href='mailto:benoitgaugiran@gmail.com?subject=Premier%20contact%20depuis%20benoitgaugiran.com'><img src="./image/email.png" width="36" height="36"></a></li>
@@ -195,7 +195,31 @@
                 </div>
             </div>       
         </footer>
-        <script src="./js/bootstrap.bundle.min.js"></script>
+        <script>
+            // When the user scrolls the page, execute myFunction
+            window.onscroll = function() {myFunction()};
+            
+            // Get the navbar
+            var navbar = document.getElementById("background-topnav");
+            console.log(navbar)
+            
+            // Get the offset position of the navbar
+            var sticky = navbar.offsetTop;
+            console.log(sticky)
+            
+            // Add the sticky class to the navbar when you reach its scroll position. Remove "sticky" when you leave the scroll position
+            function myFunction() {
+                if (window.pageYOffset > sticky) {
+                    console.log('sticky')
+                navbar.classList.add("sticky")
+                } else {
+                    console.log('not sticky')
+                navbar.classList.remove("sticky");
+                }
+            }
+        </script>
+        <script src="./js/bootstrap.bundle.min.js">    
+        </script>
     </body>
 
 </html>
