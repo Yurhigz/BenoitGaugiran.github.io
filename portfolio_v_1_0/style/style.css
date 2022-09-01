@@ -11,38 +11,55 @@ body {
     font-family: 'Inter', sans-serif;
     src: url('https://rsms.me/inter/inter.css');
     margin: 0;
+    font-family: var(--bs-font-sans-serif);
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    scroll-behavior: smooth;
+  
 }
 div.header {
     background: url(../image/cover_overlay.png) no-repeat center / 100% 100% , url(../image/cover.jpg) no-repeat center / cover ;
-    height: 360px;  
+    height: 310px;  
 }
 
-.topnav ul{
-    list-style: none;
-    background: none;
-    padding: 0;
-    margin: 0;
-    text-align: center;
+#topnav {
+  overflow: hidden;
+  margin: auto;
+  width: 514px;
 }
-
-.topnav li{
-    display: inline-block;
-}
-
-.topnav a{
+#topnav a{
     text-decoration: none;
     color: var(--color1);
-    width: 100px;
     display: block;
     padding: 25px 20px;
     font-size: 16px;
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    background: none;
+    display: block;
+    float: left;
 }
-.topnav a:hover{
+#topnav a:hover{
     color: #fff;
 }
+#background-topnav{
+  background: none;
+  z-index: 1000;
+}
+#background-topnav.sticky{
+  background: url(../image/cover_overlay.png) no-repeat center / 100% 100% , url(../image/cover.jpg) no-repeat center / cover ;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* title in the header */ 
 
 .titre h1{
     text-align: center;
@@ -59,20 +76,21 @@ div.header {
 }
 
 .metier p{
-    margin-top: 45px;
+    margin-top: 40px;
     color: #fff;
     text-align: center;
+    font-size: 18px;
 }
 
 /* About me section */ 
 
 .about-me {
-    height: 450px;
+    height: 600px;
     background-color: #F8F9FA;
     text-align: center;
-    padding-top: 25px;
-
-
+    padding-top: 90px;
+    width: 100%;
+    position: relative;
 }
 .about-me h1{
     margin-top: 0;
@@ -81,28 +99,38 @@ div.header {
 }
 
 .about-me-container{
-  display: flex;
   margin-top: 50px;
   margin-left: 218px;
   margin-right: 218px;
+  
 }
 
 .about-me-container-child {
-  flex: 1;
+  display: inline-block;
 } 
 
+.about-me img,.about-me svg {
+  width: 100%;
+}
+
 .about-me-container-child:first-child {
-  margin-right: 20px;
-  margin-left: 25px;
+  width: 75%;
+  /*margin-right: 20px;
+  margin-left: 25px;*/
 } 
+
+.about-me-container-child:nth-child(2){
+  width: 20%;
+  vertical-align: top;
+}
 
 
 /* Skills section */ 
 
 .skills {
-    height: 410px;
+    height: 600px;
     text-align: center;
-    margin-top: 25px;
+    padding-top: 90px;
     margin-left: 218px;
     margin-right: 218px;
 }
@@ -134,8 +162,8 @@ div.header {
 
 
 .portfolio{
-    height: 550px;
-    background-color: #F8F9FA;
+    height: 600px;
+    background-color: #f4f4f4;
     padding-left: 10px;
 
 }
@@ -147,6 +175,94 @@ div.header {
   background-repeat: no-repeat;
   background-size: 100% 2px;
 }
+
+
+
+/* gallery section */
+.l-gallery {
+  background: var(--bg-lightgrey);
+}
+
+.l-gallery a.zoom {
+  overflow: hidden;
+  position: relative;
+}
+
+.l-gallery a.zoom img {
+  transition: 0.3s ease-in-out;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.l-gallery a:hover img {
+  overflow: hidden;
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.l-gallery span.hover-content {
+  position: absolute;
+  bottom: -100%;
+  left: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+  padding: 46px 50px;
+  color: #ffffff;
+  z-index: 2;
+}
+
+.l-gallery span.hover-content .title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #fff;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.l-gallery span.hover-content .content {
+  font-size: 18px;
+  color: #eee;
+  display: block;
+}
+
+.l-gallery .overlay__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(51 51 51 / 56%);
+  transition: all 0.3s;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 1;
+}
+
+.l-gallery a.zoom:hover .hover-content {
+  bottom: 0;
+  visibility: visible;
+  opacity: 1;
+}
+
+.l-gallery a.zoom:hover .overlay__hover {
+  visibility: visible;
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .l-gallery span.hover-content {
+    padding: 36px 40px;
+  }
+}
+
+
+
+/* gallery */
+
 
 /* ----- Contact section ------ */
 .contact{
