@@ -64,25 +64,38 @@ div.header {
     text-align: center;
 }
 
+/* About me section */ 
+
 .about-me {
     height: 450px;
     background-color: #F8F9FA;
     text-align: center;
     padding-top: 25px;
 
+
 }
 .about-me h1{
     margin-top: 0;
     padding-top: 10px;
-    
     display: inline-block;
-    background-image: linear-gradient(to right, #000000, #000000);
-    background-position: bottom left;
-    background-repeat: no-repeat;
-    background-size: 100% 2px;
-
-
 }
+
+.about-me-container{
+  display: flex;
+  margin-top: 50px;
+  margin-left: 218px;
+  margin-right: 218px;
+}
+
+.about-me-container-child {
+  flex: 1;
+} 
+
+.about-me-container-child:first-child {
+  margin-right: 20px;
+  margin-left: 25px;
+} 
+
 
 /* Skills section */ 
 
@@ -90,6 +103,8 @@ div.header {
     height: 410px;
     text-align: center;
     margin-top: 25px;
+    margin-left: 218px;
+    margin-right: 218px;
 }
 
 .skills h1{
@@ -99,6 +114,24 @@ div.header {
   background-repeat: no-repeat;
   background-size: 100% 2px;
 }
+
+.container-skill{
+  display: flex;
+}
+
+.skill-bloc-left{
+  margin-right: 25px;
+}
+
+.skill-bloc-right{
+  margin-left: 25px;
+}
+
+.mbot {
+  margin-bottom: 75px;
+}
+/* Portfolio */ 
+
 
 .portfolio{
     height: 550px;
