@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head> 
-        <title> Benoît Gaugiran </title>
+        <title> Benoît Gaugiran | Data Science</title>
         <meta charset = 'UTF-8'>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
         <link rel="stylesheet" href="style/style.css" type="text/css">
-        <link rel="icon" href="image/developpement-web.png">
+        <link rel="icon" href="image/data_brown.png">
         <link rel="stylesheet" href="style/bootstrap.min.css">
         <link rel="stylesheet" href="style/style-starter.css">
 
@@ -31,34 +31,56 @@
         </div>
         <!-- Section About me -->  
         <div class='about-me'> 
-            <h1 id = 'about'>About Me</h1>
-            <ul>
-                <li>Hello, my name is Benoît. 
-                    I am freshly reconverted as a Data Scientist. As an originally scientific profile I came back to what I enjoy the most, mathematics and analysis.  I am very curious, and that drives me to work over plenty of different subject, I like to dig deep down into datas and share what I learn !
-                </li>
-                <li><img src="./image/profile_benoit.png"></li>
-            </ul>
+            <div class="text-center mb-sm-5 mb-4">
+                <h5 class="title-small mb-1" style="color: var(--color1);">About Me</h5>
+                <h3 class="title-style" >A short background story</h3>
+            </div>
+            <div class="about-me-container">
+                <div class="about-me-container-child text">
+                    <p>Hello, my name is Benoît. 
+                        I am freshly reconverted as a Data Scientist. 
+                        As an originally scientific profile I came back to what I enjoy the most, mathematics and analysis.  
+                        I am very curious, and that drives me to work over plenty of different subject, I like to dig deep down into datas and share what I learn !
+                    </p>
+                    <img src = "./image/test.svg" alt="My SVG" style="margin-top: 50px;">
+
+        
+                </div>
+                <div class="about-me-container-child pic"><img src="./image/profile_benoit.png"></div>
+            </div>
         </div>
         <!-- Section skills-->  
         <div class='skills'> 
-            <h1 id ='skills'>Skills</h1>
-            <table>
-                <tr>
-                    <th><img src="./image/data-management.png" width="48" height="48"></th>
-                    <th><img src="./image/search-analysis.png" width="48" height="48"></th>
-                    <th><img src="./image/infographic.png" width="48" height="48"></th>
-                </tr>
-                <tr>
-                    <th>Data Management</th>
-                    <th>Data Exploration</th>
-                    <th>Data Visualization</th>
-                </tr>
-                <tr>
-                    <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste vitae iusto distinctio cum aliquid? Quia harum minima provident in sapiente!</th>
-                    <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor placeat corporis eius quam tempora voluptas iste odit aliquid officia eum?</th>
-                    <th>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem fugit labore quibusdam repellendus sit odio non commodi minima enim cum!</th>
-                </tr>
-            </table>
+            <div class="text-center mb-sm-5 mb-4">
+                <h5 class="title-small mb-1" style="color: var(--color1);">Skills</h5>
+                <h3 class="title-style" >Here are my tools</h3>
+            </div>
+            <div  style="margin-top: 50px;">
+                    <div class="container-skill">
+                        <div class="skill-bloc-left mbot" style="width: 50%;">
+                            <img src="./image/data_gathering.png" width="48" height="48">
+                            <h2>Data Gathering</h2>
+                            <p>Data harvesting , development of webscraping scripts. Creation of automated workflows.</p>
+                        </div>
+                        <div class="skill-bloc-right mbot" style="width: 50%;">
+                            <img src="./image/data_cleaning.png" width="48" height="48">
+                            <h2>Data Cleaning</h2>
+                            <p>Remove incorrect, corrupted, incorrectly formatted and duplicate data. Deliver proper dataset to explore.</p>
+                        </div>
+                    </div>
+                    <div class="container-skill mbot">
+                        <div class="skill-bloc-left" style="width: 50%;">
+                            <img src="./image/search-analysis.png" width="48" height="48">
+                            <h2>Data Mining </h2>
+                            <p>Data exploration and transformation, application of statistical methods. Analyzing results,trends. Get more value from data with prediction models.</p>
+                        </div>
+                        <div class="skill-bloc-right mbot" style="width: 50%;">
+                            <img src="./image/data-visualization.png" width="48" height="48">
+                            <h2>Data Visualization</h2>
+                            <p>Creation of static and interactive visualization models (Tableau, Seaborn, Matplotlib...).</p>
+                        </div>
+                    </div>
+            </div>
         </div>
         <!-- Section portfolio -->  
 
@@ -86,7 +108,7 @@
                                 <img class="card-img-bottom d-block" src="./image/olympic_games_project.jpg" alt="Olympic Games">
                                 <span class="overlay__hover"></span>
                                 <span class="hover-content">
-                                    <span class="title">Olympic Medal since 1880</span>
+                                    <span class="title">Olympic Medals</span>
                                     <span class="content">This a two-steps project where I firstly scrap the data and organize it before diving into it to highlight success factors in the Olympic Games.</span>
                                 </span>
                             </a>
@@ -98,9 +120,8 @@
                                 <img class="card-img-bottom d-block" src="./image/Telecom_churn.jpg" alt="Telecom antennas">
                                 <span class="overlay__hover"></span>
                                 <span class="hover-content">
-                                    <span class="title">Telecom Customer Churn</span>
-                                    <span class="content">This project consists of assisting a company in improving customer retention by identifying high value customers, 
-                                        churn risks and bring it on recommendations to the Company.</span>
+                                    <span class="title">Telecom Churn</span>
+                                    <span class="content">This project consists of assisting a company in improving customer retention by identifying KPIs and propose recommendations to the Company.</span>
                                 </span>
                             </a>
                         </div>
@@ -123,8 +144,8 @@
                                 <img class="card-img-bottom d-block" src="./image/airline_customer_satisfaction.jpg" alt="Airline Company">
                                 <span class="overlay__hover"></span>
                                 <span class="hover-content">
-                                    <span class="title">Airline Passenger Satisfaction</span>
-                                    <span class="content">The objective of this project is to guide an airlines company to determine the important factors that influences the customer or passenger satisfaction.</span>
+                                    <span class="title">Passenger Satisfaction</span>
+                                    <span class="content">This project's objectives are to guide an airline company to determine the important factors that influence the passenger satisfaction.</span>
                                 </span>
                             </a>
                         </div>
