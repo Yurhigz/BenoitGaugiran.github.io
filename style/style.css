@@ -124,6 +124,26 @@ div.header {
   vertical-align: top;
 }
 
+.about-me-img{
+  margin-top: 50px;
+  max-width: 1050px ;
+  max-height: 110px;
+}
+
+@media only screen and (max-width: 767px) {
+  div.about-me-container {
+    margin-left: 8px;
+    margin-right: 8px;
+  }
+  .about-me-img {
+    max-width: 350px;
+
+  } 
+  .pic{
+    display: none;
+  }
+}
+
 
 /* Skills section */ 
 
@@ -157,6 +177,15 @@ div.header {
 
 .mbot {
   margin-bottom: 75px;
+}
+
+@media only screen and (max-width: 765px) {
+  .skills {
+    margin-left: 8px;
+    padding-right: 8px;
+    width: 100%;
+    height: auto;
+}
 }
 /* Portfolio */ 
 
@@ -540,4 +569,6 @@ h3.title-style {
   padding-top: 0.5rem !important;
 }
 
-/* test */ 
+/* Mobile version */ 
+
+
